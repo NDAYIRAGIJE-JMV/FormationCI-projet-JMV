@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+.h {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    
+}
+.h span:hover {
+    color: blueviolet;
+}
+
+.h span  {
+    font-weight: 700;
+    color: rgb(100 116 139);
+    cursor: pointer;
+}
+.h svg {
+    margin-right: 0.5rem;
+    color: rgb(100 116 139);
+    cursor: pointer;
+}
+.h span.active{
+    color: blueviolet;
+}
+.sectionEmails, .sectionUsers ,.Uploads{
+    position: relative;
+}
+.sectionEmails::after ,.sectionUsers::after,.Uploads::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.1) );
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.nbr {
+    background: linear-gradient(to right, #3378FF ,#9442FE);
+}
+.aside.hide {
+    width: 5% ;
+}

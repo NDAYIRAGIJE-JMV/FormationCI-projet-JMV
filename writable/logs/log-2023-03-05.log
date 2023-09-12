@@ -1,0 +1,6 @@
+CRITICAL - 2023-03-05 07:04:48 --> Class 'App\Models\PostModel' not found
+in APPPATH\Controllers\Dashboard.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

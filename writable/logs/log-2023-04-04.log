@@ -1,0 +1,336 @@
+CRITICAL - 2023-04-04 07:41:50 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 07:42:06 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 09:04:58 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Home.php on line 230.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 09:05:25 --> Call to a member function setTo() on null
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 09:06:28 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 09:06:53 --> Call to a member function setTo() on null
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-04 09:09:24 --> Call to a member function setTo() on null
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-04 09:23:28 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:23:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:23:28 --> 
+ERROR - 2023-04-04 09:23:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:23:36 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:23:36 --> 
+ERROR - 2023-04-04 09:23:57 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:23:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:23:57 --> 
+ERROR - 2023-04-04 09:24:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:24:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:24:48 --> 
+ERROR - 2023-04-04 09:24:53 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:24:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:24:53 --> 
+ERROR - 2023-04-04 09:25:39 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(157): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:25:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:25:39 --> 
+ERROR - 2023-04-04 09:36:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:36:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:36:15 --> 
+ERROR - 2023-04-04 09:36:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:36:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:36:23 --> 
+ERROR - 2023-04-04 09:36:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:36:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:36:30 --> 
+ERROR - 2023-04-04 09:37:03 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:37:03 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:37:03 --> 
+ERROR - 2023-04-04 09:37:07 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:37:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:37:07 --> 
+ERROR - 2023-04-04 09:37:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(150): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:37:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:37:15 --> 
+ERROR - 2023-04-04 09:39:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(151): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:39:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:39:12 --> 
+ERROR - 2023-04-04 09:39:19 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(151): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:39:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:39:19 --> 
+CRITICAL - 2023-04-04 09:42:28 --> Call to undefined function App\Controllers\email()
+in APPPATH\Controllers\Home.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-04 09:44:30 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(151): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:44:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:44:30 --> 
+ERROR - 2023-04-04 09:44:35 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 60)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(151): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:44:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:44:35 --> 
+ERROR - 2023-04-04 09:46:57 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to ssl://smtp.gmail.com:400 (Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.
+) in C:\xampp\htdocs\FormationCI\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): un...', 'C:\\xampp\\htdocs...', 1863, Array)
+#1 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1863): fsockopen('ssl://smtp.gmai...', 400, 10060, 'Une tentative d...', 50)
+#2 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1777): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1662): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\FormationCI\system\Email\Email.php(1560): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\FormationCI\app\Controllers\Home.php(151): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\Home->forgot_password()
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-04 09:46:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-04-04 09:46:57 --> 

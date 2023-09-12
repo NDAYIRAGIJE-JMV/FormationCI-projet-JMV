@@ -1,0 +1,113 @@
+CRITICAL - 2023-07-20 13:41:19 --> Class 'BaseController' not found
+in APPPATH\Controllers\paginationContr.php on line 3.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\paginationContr.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\paginationContr')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\paginationContr')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\paginationContr')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\paginationContr', true)
+ 7 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 13:50:43 --> syntax error, unexpected ';', expecting variable (T_VARIABLE)
+in APPPATH\Controllers\paginationContr.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\paginationContr.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\paginationContr')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\paginationContr')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\paginationContr')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\paginationContr', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 13:59:00 --> Cannot use object of type mysqli as array
+in APPPATH\Views\Paginate.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Paginate.php', [], true)
+ 4 APPPATH\Controllers\paginationContr.php(15): view('Paginate.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 13:59:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResultArrey()
+in APPPATH\Models\EtudModel.php on line 55.
+ 1 APPPATH\Controllers\paginationContr.php(14): App\Models\EtudModel->datafetch()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 14:01:38 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Paginate.php on line 32.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Paginate.php', [], true)
+ 4 APPPATH\Controllers\paginationContr.php(15): view('Paginate.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 14:10:59 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\paginationContr.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\paginationContr.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\paginationContr')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\paginationContr')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\paginationContr')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\paginationContr', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-20 14:11:36 --> mysqli_sql_exception: Unknown column 'Client.deleted_at' in 'where clause' in C:\xampp\htdocs\FormationCI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\FormationCI\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\FormationCI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\FormationCI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\FormationCI\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\FormationCI\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\FormationCI\system\BaseModel.php(1106): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\FormationCI\app\Controllers\paginationContr.php(14): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+#9 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-20 14:11:36 --> mysqli_sql_exception: Unknown column 'Client.deleted_at' in 'where clause' in C:\xampp\htdocs\FormationCI\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\FormationCI\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\FormationCI\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\FormationCI\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\FormationCI\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\FormationCI\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\FormationCI\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\FormationCI\system\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\FormationCI\app\Controllers\paginationContr.php(14): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+#9 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+#10 C:\xampp\htdocs\FormationCI\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\FormationCI\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-20 14:11:36 --> Call to a member function getResult() on bool
+in SYSTEMPATH\Model.php on line 224.
+ 1 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 2 SYSTEMPATH\BaseModel.php(1110): CodeIgniter\BaseModel->findAll(10, 0)
+ 3 APPPATH\Controllers\paginationContr.php(14): CodeIgniter\BaseModel->paginate(10)
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-20 15:28:05 --> Cannot declare class CodeIgniter\Pager\PagerRenderer, because the name is already in use
+in APPPATH\Views\layout\pagination.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-20 15:31:04 --> Invalid file: app\Views\layout\pagination.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('APPPATH\\Views\\layout\\pagination.php')
+ 2 SYSTEMPATH\Pager\Pager.php(126): CodeIgniter\View\View->render('app\\Views\\layout\\pagination', null, false)
+ 3 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'pagination')
+ 4 APPPATH\Views\Paginate.php(42): CodeIgniter\Pager\Pager->links('default', 'pagination')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Paginate.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Paginate.php', [], true)
+ 8 APPPATH\Controllers\paginationContr.php(16): view('Paginate.php', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\paginationContr->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\paginationContr))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
